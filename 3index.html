@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Альфа-Банк</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 400px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    .avatar {
+      width: 48px;
+      height: 48px;
+      background: #e0e0e0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #777;
+    }
+    h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+    .balance {
+      margin: 20px 0;
+    }
+    .label {
+      font-size: 14px;
+      color: #666;
+    }
+    .amount {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+    .card {
+      background: #d32f2f;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      text-align: center;
+      display: inline-block;
+      margin-top: 8px;
+    }
+    .card span {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .btn-link {
+      display: block;
+      background: #e0e0e0;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: #333;
+      border-radius: 8px;
+      margin: 16px 0;
+      text-align: center;
+      font-weight: bold;
+    }
+    .section {
+      margin: 24px 0;
+    }
+    .info-box {
+      background: #fafafa;
+      padding: 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: #f0f0f0;
+      padding: 12px 16px;
+      border-radius: 24px;
+      margin: 20px 0;
+    }
+    .search-icon {
+      margin-right: 8px;
+      font-size: 18px;
+    }
+    .qr-icon {
+      width: 24px;
+      height: 24px;
+      background: #ddd;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+    .promo-cards {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .promo-card {
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      padding: 16px;
+      border-radius: 12px;
+      flex: 1;
+      min-width: 150px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .promo-card:nth-child(2) {
+      background: linear-gradient(135deg, #74b9ff 0%, #55efc4 100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="avatar">👤</div>
+      <h1>Дмитрий</h1>
+    </div>
+
+    <div class="balance">
+      <div class="label">Счёт Альфа-карты</div>
+      <div class="amount">60 000,00 ₽</div>
+      <div class="card">
+        <span>A</span>
+        0504 <small>МИР</small>
+      </div>
+    </div>
+
+    <a href="#" class="btn-link">Получайте кэшбэк за оплату с Alfa Pay</a>
+
+    <div class="section">
+      <div class="label">Кредит</div>
+      <div class="amount">320 000,00 ₽</div>
+      <a href="#" class="btn-link">Платеж 27 декабря 39 000,00 ₽</a>
+    </div>
+
+    <div class="info-box">
+      Оформите ипотека в один клик до конца декабря за 4,5% годовых
+      <button style="background:none; border:none; font-size:18px; float:right;">×</button>
+    </div>
+
+    <div class="search-bar">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="Поиск по приложению" style="flex:1; border:none; background:none; outline:none;" />
+      <div class="qr-icon">📷</div>
+    </div>
+
+    <div class="promo-cards">
+      <div class="promo-card">Новый полис — билет на море</div>
+      <div class="promo-card">Как не платить проценты по кредитке</div>
+    </div>
+
+    <!-- Кнопка перехода на следующий экран -->
+    <a href="account.html" style="display:block; margin-top:30px; text-align:center; font-weight:bold; color:#007bff;">Перейти к счёту →</a>
+  </div>
+</body>
+</html>
